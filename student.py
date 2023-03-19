@@ -33,6 +33,26 @@ class Student(object):
         """Returns the highest score."""
         return max(self.scores)
  
+    #Make a method that compares two objects
+    @classmethod
+    def isEqual(cls,score1,score2):
+        if score1 == score2:
+            print("The scores are for both students are equal")
+        else:
+            print("The scores are not equal")
+    @classmethod
+    def isLessThan(cls,score1,score2):
+        if score1 < score2:
+            print(str(score1) + " is less than " + str(score2))
+        else:
+            print(str(score1) + " is not less than " + str(score2))
+    @classmethod
+    def greaterOrEqual(cls,score1,score2):
+        if score1 >= score2:
+            print(str(score1) + " is greater than or equal than " + str(score2))
+        else:
+            print(str(score1) + " is not greater " + str(score2))
+
     def __str__(self):
         """Returns the string representation of the student."""
         return "Name: " + self.name  + "\nScores: " + \
