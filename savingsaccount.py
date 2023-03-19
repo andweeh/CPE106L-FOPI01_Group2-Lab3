@@ -57,3 +57,6 @@ class SavingsAccount:
         interest = self.balance * SavingsAccount.RATE
         self.deposit(interest)
         return interest
+    
+    def __lt__(self, other):
+        return self.name < other.name
