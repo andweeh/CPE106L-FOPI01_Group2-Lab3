@@ -12,14 +12,14 @@ students = [
 # Shuffle the list of students
 random.shuffle(students)
 
- # Sort Method in ascending order
- #<-- after shuffle list method
-student.sort()
+# Sort Method in ascending order
+#<-- after shuffle list method
+students.sort(key=lambda student: student.getName())
 for student in students:
-  print(students)
+  print(student)
 
 # Sort Method in descending order
 #<-- after shuffle list method
-  # student_sort.sort(reverse=True)
-  # for student in students:
-  #   print(students)
+# students.sort(reverse=True)
+# for student in students:
+#   print(student)
