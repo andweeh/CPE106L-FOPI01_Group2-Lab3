@@ -34,7 +34,8 @@ class Bank:
 
     def __str__(self):
         """Returns the string representation of the bank."""
-        return "\n".join(map(str, self.accounts.values()))
+        temp = sorted(self.accounts.keys())
+        return '\n'.join([str(self.accounts[key]) for key in temp])
 
     def makeKey(self, name, pin):
         """Returns a key for the account."""
